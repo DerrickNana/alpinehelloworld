@@ -8,7 +8,7 @@ ADD ./webapp/requirements.txt /tmp/requirements.txt
 # Install dependencies
 RUN python3 -m venv venv
 RUN source venv/bin/activate
-RUN pip3 install --no-cache-dir -q -r /tmp/requirements.txt
+RUN pip install --no-cache-dir -q -r /tmp/requirements.txt
 
 # Add our code
 ADD ./webapp /opt/webapp/
